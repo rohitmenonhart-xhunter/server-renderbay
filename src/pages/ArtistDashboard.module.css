@@ -1,0 +1,66 @@
+@keyframes backgroundFloat {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-10px) translateX(10px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+.background_blob {
+  animation: backgroundFloat 10s ease-in-out infinite;
+}
+
+.background_blob:nth-child(1) { animation-delay: 0s; }
+.background_blob:nth-child(2) { animation-delay: -5s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.form_container {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.model_card {
+  animation: scaleIn 0.4s ease-out forwards;
+}
+
+.model_card:nth-child(3n+1) { animation-delay: 100ms; }
+.model_card:nth-child(3n+2) { animation-delay: 200ms; }
+.model_card:nth-child(3n+3) { animation-delay: 300ms; }
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.gradient_button {
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+} 

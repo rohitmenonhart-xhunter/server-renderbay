@@ -1,0 +1,55 @@
+@keyframes navFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav_item {
+  animation: navFadeIn 0.3s ease-out forwards;
+}
+
+.nav_item:nth-child(1) { animation-delay: 100ms; }
+.nav_item:nth-child(2) { animation-delay: 200ms; }
+.nav_item:nth-child(3) { animation-delay: 300ms; }
+
+@keyframes menuSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile_menu_item {
+  animation: menuSlideIn 0.3s ease-out forwards;
+}
+
+.mobile_menu_item:nth-child(1) { animation-delay: 100ms; }
+.mobile_menu_item:nth-child(2) { animation-delay: 150ms; }
+.mobile_menu_item:nth-child(3) { animation-delay: 200ms; }
+.mobile_menu_item:nth-child(4) { animation-delay: 250ms; }
+
+@keyframes logoSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo_spin {
+  animation: logoSpin 20s linear infinite;
+}
+
+.logo_spin:hover {
+  animation-duration: 2s;
+} 
